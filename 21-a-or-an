@@ -1,9 +1,3 @@
 public String aOrAn(String word) {
-    //code here
-  if(word.subString(0,1) == 'aeiou'){
-      return 'An '+ word;
-  }
-  else{
-      return 'a '+word;
-  }
+ return 'aeiou'.containsAny(word.left(1))? 'an '+word : 'a '+word;
 }
