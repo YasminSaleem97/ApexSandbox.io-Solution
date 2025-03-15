@@ -1,13 +1,9 @@
 public String aOrAn(String word) {
     //code here
-    List<String> vowelsList = new List<String>(['a','e','i','o','u']);
-    String result;
-    if(word.startsWith(vowelsList)){
-         result = 'an '+ word;
-         return result;
-    }
-    else{
-        result = 'a '+ word;
-        return result;
-    }
+  if(word.subString(0,1) == 'aeiou'){
+      return 'An '+ word;
+  }
+  else{
+      return 'a '+word;
+  }
 }
