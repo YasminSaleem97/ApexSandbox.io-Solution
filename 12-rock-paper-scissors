@@ -1,10 +1,10 @@
 public Integer rockPaperScissors(String player1, String player2) {
     //code here
-    if((player1.isEquals('rock') && player2.isEquals('scissors')) ||
-       (player1.isEquals('scissors')  && player2.isEquals('paper')) ||
-       (player1.isEquals('paper')  && player2.isEquals('rock'))){
+    if((player1.Equals('rock') && player2.Equals('scissors')) ||
+       (player1.Equals('scissors')  && player2.Equals('paper')) ||
+       (player1.Equals('paper')  && player2.Equals('rock'))){
         return 1;
-    }else if(player1.isEquals(player2)){
+    }else if(player1.Equals(player2)){
         return 0;
     }
     return 2;
