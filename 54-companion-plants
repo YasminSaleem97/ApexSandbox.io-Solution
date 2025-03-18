@@ -6,7 +6,7 @@ public Boolean companionPlants(String plant1, String plant2) {
         'cucumbers'=> new Set{'lettuce'},
         'carrots'=> new Set{'onions'},
         'tomatoes'=> new Set{'onions'}
-    }
+    };
    return companionMap.containsKey(plant1) && companionMap.get(plant1).contains(plant2) ||
           companionMap.containsKey(plant2) && companionMap.get(plant2).contains(plant1)
 
