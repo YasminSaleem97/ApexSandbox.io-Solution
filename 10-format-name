@@ -2,21 +2,21 @@ public String formatName(String firstName, String lastName) {
     //code here
    
     // Handle null values
-    if (firstName == null) firstName = '';
+   if (firstName == null) firstName = '';
     if (lastName == null) lastName = '';
 
     // If both names are empty, return an empty string
-    if (firstName.isEmpty() && lastName.isEmpty()) {
+    if (firstName.isBlank() && lastName.isBlank()) {
         return '';
     }
 
     // If last name is empty, return first name only
-    if (lastName.isEmpty()) {
+    if (lastName.isBlank()) {
         return firstName;
     }
 
     // If first name is empty, return last name only
-    if (firstName.isEmpty()) {
+    if (firstName.isBlank()) {
         return lastName;
     }
 
