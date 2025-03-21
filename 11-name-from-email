@@ -1,4 +1,4 @@
 public String nameFromEmail(String email) {
     //code here
-   return email.subStringbefore('.') +' '+ email.subStringBetween('.','@')
+   return email.substringBefore('.') +' '+ email.substringBetween('.','@')
 }
