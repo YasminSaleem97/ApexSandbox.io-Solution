@@ -1,4 +1,10 @@
 public String nameFromEmail(String email) {
     //code here
-   return email.substringBefore('.').toLowerCase() +' '+ email.substringBetween('.','@').toLowerCase()
+   String firstName = email.substringBefore('.').toLowerCase();
+   String lastName = email.substringBetween('.','@').toLowerCase();
+
+   firstName = email.subString(0,1).toUpperCase();
+   lastName = email.subString(0,1).toUpperCase();
+
+   return firstName +' '+ lastName;
 }
