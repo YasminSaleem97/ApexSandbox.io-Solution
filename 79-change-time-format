@@ -3,7 +3,7 @@ public String changeTimeFormat(String strTime) {
     List<String> parts = strTime.split(':');
     Integer hours = Integer.valueof(parts[0]);
     String minutes = parts[1];
-    String period = hours < 12 ? "A.M":"P.M";
+    String period = hours < 12 ? 'A.M':'P.M';
     if(hours == 0){
         hours = 12;
     }else if (hours > 12){
