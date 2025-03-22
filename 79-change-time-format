@@ -9,7 +9,10 @@ public String changeTimeFormat(String strTime) {
     }else if (hours > 12){
         hours -= 12;
         }
+    // Ensure two-digit formatting for hours
+    String formattedHours = (hours < 10) ? '0' + String.valueOf(hours) : String.valueOf(hours);
 
-    return String.valueof(hours)+':'+minutes+' '+period;
+    // Return the formatted time
+    return formattedHours + ':' + minutes + ' ' + period;
 
 }
