@@ -17,7 +17,8 @@ public Integer nextPrime(Integer num) {
                    return false;
                }
            }
-           return true;
+           
        }
+       return true;
    
 }
