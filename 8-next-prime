@@ -1,0 +1,10 @@
+public Integer nextPrime(Integer num) {
+    //code here
+    if(num<=1)
+    return 0;
+    for(Integer i = 2; i<=Math.sqrt(num); i++){
+        if(Math.mod(num,i)==0){
+            return num+1;
+        }
+    }
+}
